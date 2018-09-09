@@ -1,37 +1,34 @@
 # title-tab for iTerm2 + oh-my-zsh
 
-> This plugin sets the tab title to `current folder (git-branch)` if you're on a git repository or `current folder` if you're not.
+> This plugin sets the tab title to `username@hostname: full-path (git-branch)` if you're on a git repository or `username@hostname: full-path` if you're not.
 
-![title tab working](http://i.imgur.com/9nNCNIT.png)
+![title tab working](./img/title-tab.png)
 
 ## Installing
 
 1. Clone this repository to `/path/to/.oh-my-zsh/custom/plugins` (usually it is on `~/.oh-my-zsh`)
 
   ```bash
-  $ git clone git@github.com:romulomachado/title-tab.git ~/.oh-my-zsh/custom/plugins
+  $ git clone git@github.com:nesoug/title-tab.git ~/.oh-my-zsh/custom/plugins/title-tab
   ```
 
-2. Go to `iTerm > Preferences... > Appearance` and uncheck all the checkboxes from **Window & Tab Titles** section.
 
-![screenshot iTerm Preferences](http://i.imgur.com/IfydKIH.png)
-
-3. Find where your zsh plugins are on the ```.zshrc``` file and add ```title-tab``` to the list.
+2. Edit `.zshrc` file.
+  - Find where your zsh plugins are on the `.zshrc` file and add ```title-tab``` to the list.
 
   ```bash
   plugins=(... title-tab)
   ```
+  - Uncomment the following line to disable auto-setting terminal title.
+  ```bash
+  DISABLE_AUTO_TITLE="true"
+  ```
 
-4. Run ```source .zshrc```.
+3. Run ```source .zshrc```.
 
   ```bash
   $ source ~/.zshrc
   ```
 
-  Or if you use ```zsh_reload```:
-
-  ```bash
-  $ src
-  ```
 
 And that's it. :)
