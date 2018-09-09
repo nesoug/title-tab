@@ -9,7 +9,7 @@
 1. Clone this repository to `/path/to/.oh-my-zsh/custom/plugins` (usually it is on `~/.oh-my-zsh`)
 
   ```bash
-  $ git clone git@github.com:nesoug/title-tab.git ~/.oh-my-zsh/custom/plugins/title-tab
+  $ git clone https://github.com/nesoug/title-tab.git ~/.oh-my-zsh/custom/plugins/title-tab
   ```
 
 
